@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alive Game</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+               <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+              <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous">
+    </head>
+    <style>
+        .chars{
+            display:flex;
+            justify-content: space-evenly;
+            margin-bottom: 40px;
+        }
+        body {
+    margin: 0;
+    padding: 5px;
+}
+.blur-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('game.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1; /* Ensure it's behind the content */
+}
+
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure it's in front of the blurred background */
+    padding: 20px;
+}
+    .btn{
+        width: 150px;
+        height: 40px;
+        border: 1px solid black;
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+        background-color: violet;
+        border-radius: 10%;
+    }
+    .game-title {
+      font-family: 'Fredoka One', sans-serif;
+      font-size: 32px;
+      color: #ff6600; /* Orange color for a vibrant look */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.9); /* Adds a subtle shadow */
+    }
+    .heading{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    </style>
+    <body>
+          <div class="blur-bg"></div>
+    <div class="content">
+        <div class="heading">
+        <h1 class="game-title" style="text-align: center; margin-top: 40px; margin-bottom: 70px; color:red; ">SHABANE HATOSHI</h1>
+            <i id="icon" style=" margin-top: -30px; font-size: 30px;" color: green; class="fas fa-gamepad"></i>
+                       
+            </div>
+        <div class="chars">
+            <img class="one" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); border-radius: 40%; margin-right: 5px; border: 2px solid black;" src="char1.png" height="200" width="150" alt="">
+            <img class="two" style="box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.5); border-radius: 40%; margin-left: 5px; border: 2px solid black;" src="char2.png" height="200" width="150" alt="">
+        </div>
+        <h3 style="text-align: center; color: white; background-color: black;">SELECT A CHARACTER</h3>
+    </div>
+    <h2 class="wordone" style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 28px; color: white; display:none; text-shadow: 2px 2px 4px blue; font-weight: bold;">GOHAPAZ SHIVA</h2>
+    <h2 class="wordtwo" style="text-align: center; font-family: 'Roboto', sans-serif; font-size: 28px; color: white; display:none; text-shadow: 2px 2px 4px blue">HELEN MONABEZ</h2>
+    <div style="display: flex; justify-content: center; align-items: center;">
+        <button class="btn" style="margin-top: 50%; position: fixed; font-weight: bold;">start game</button>
+    </div>
+        </div>
+</body>
+   <script src="app.js"></script>
+</html>
