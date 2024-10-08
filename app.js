@@ -40,3 +40,5 @@ btn.addEventListener("click",() => {
     }
     
 })
+
+alert('Hello world')
