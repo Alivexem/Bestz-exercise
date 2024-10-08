@@ -38,7 +38,9 @@ btn.addEventListener("click",() => {
     }else{
         window.location.href = "game2.html"
     }
+
+    alert('Hello world')
     
 })
 
-alert('Hello world')
+
